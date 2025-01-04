@@ -1,0 +1,29 @@
+Linux Directory Structure:
+bin: binaries and some commands eg: pwd
+boot: 
+dev:
+etc*: It store all the configuration files user and system level.
+home*: Home directory 
+lib
+lib64
+local
+media:
+mnt:
+opt*: optional
+proc:
+root*:  
+run
+sbin: superbin
+srv:
+sys:
+tmp:
+usr:
+var*: logs / install docker , jenkins etc
+Note: ony root can edit the files
+
+LINUX COMMANDS:
+
+Linux : normal users= many , root users = 1 
+normal user:  ~ root = #
+current directory : .
+root directory : /
