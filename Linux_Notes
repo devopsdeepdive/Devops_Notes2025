@@ -28,3 +28,7 @@ Linux : normal users= many , root users = 1
 normal user:  ~ root = #
 current directory : .
 root directory : /
+
+SSH;
+https://www.ssh.com/academy/ssh
+https://www.ssh.com/academy/ssh/keygen
