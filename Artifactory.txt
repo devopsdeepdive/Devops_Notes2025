@@ -1,0 +1,46 @@
+Maven:
+apt-get install openjdk-11-jre-headless
+java -version
+ apt-get install maven
+ mvn --version
+
+maven : pom.xml
+goals:
+
+1. clean
+Maven also has standard phases for cleaning the project and for generating a project site. If cleaning were part of the default lifecycle, the project would be cleaned every time it was built. This is clearly undesirable, so cleaning has been given its own lifecycle.
+
+2.site
+3. default:
+validate
+compile
+test
+package: jar , war ,ear
+java arch , web arch , ear=enterprise arch
+install 
+deploy
+
+
+    <artifactId>test</artifactId>- project name
+    <groupId>com.example</groupId>- java code path 
+ <version>1.0.0-SNAPSHOT</version>
+ <packaging>jar</packaging>
+
+
+ mvn validate
+ 
+ mvn compile:
+ 
+ Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.8.4/plexus-compiler-api-2.8.4.jar
+
+3 repositories:
+1.local repo= .m2
+2.central
+https://repo.maven.apache.org/maven2/org/
+3. remote repo- for managed by us
+mvn package
+mvn package -DskipTests=True
+https://en.wikipedia.org/wiki/Apache_Maven
+
+SNAPSHOT: develpoing
+RELEASE: production
