@@ -1,0 +1,47 @@
+22nd March :
+Docker:
+https://www.docker.com/
+Communiy Edition of Docker Enginer:
+https://docs.docker.com/engine/install/ubuntu/
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
+
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+
+
+  Default Directory :
+/etc/docker
+  Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Authenticate to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+    Docker image:
+    A Docker image is a read-only template used to build containers. Images are used to store and ship applications.
+    docker images: to check list of images
+ pull        Download an image from a registry
+      ps          List containers
+
+    docker run -itd eff2362b2d14
+    docker run -itd --name my jenkins -p 8080:8080 (hostport) eff2362b2d14
+      exec        Execute a command in a running container
+ docker exec -it 1461c9d50d3f bash
+
